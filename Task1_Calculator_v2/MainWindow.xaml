@@ -1,0 +1,46 @@
+﻿<Window x:Class="Task1_Calculator_v2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1_Calculator_v2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="350">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Background="#FFCCD1EB" />
+        <Border Grid.Row="0" BorderBrush="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5"  >
+            <TextBlock Text="123456.789" Margin="5" 
+                       FontFamily="Script MT Bold" FontSize="40" Foreground="Navy" />
+        </Border>
+        <UniformGrid Grid.Row="1" Columns="4" Rows="6">
+            <Button Content="%" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+            <Button Content="CE" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+            <Button Content="C" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+            <Button Content="=" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+            <Button Content="1/x" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+            <Button Content="x²" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+            <Button Content="√" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+            <Button Content="+" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+            <Button Content="7" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="8" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="9" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="x" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+            <Button Content="6" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="5" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="4" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="-" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+            <Button Content="3" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="2" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="1" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="+" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+            <Button Content="±" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="0" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="," FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="Lavender"/>
+            <Button Content="=" FontFamily="Script MT Bold" FontSize="20" Foreground="Navy" Background="LightGray"/>
+        </UniformGrid>
+    </Grid>
+</Window>
